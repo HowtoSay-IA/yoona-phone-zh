@@ -8168,47 +8168,5 @@ body {
 })();
 </script>
 
-<style id="mobile-frame-unify">
-/* 移动端统一使用桌面同款手机外框，避免 ≤480px 断点去掉边框导致安卓端无框/内容被裁 */
-html, body {
-  height: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  background: #e9e9ec !important;
-}
-#phone {
-  position: fixed !important;
-  left: 50% !important;
-  top: 50% !important;
-  width: 402px !important;
-  min-width: 402px !important;
-  max-width: 402px !important;
-  height: 874px !important;
-  min-height: 874px !important;
-  max-height: 874px !important;
-  border: 7px solid #242426 !important;
-  border-radius: 54px !important;
-  outline: none !important;
-  background: #fff !important;
-  box-shadow: 0 22px 60px rgba(0,0,0,.14), 0 0 0 1px rgba(0,0,0,.06) !important;
-  overflow: hidden !important;
-  transform: translate(-50%, -50%) scale(var(--v86-phone-scale, 1)) !important;
-  transform-origin: center center !important;
-}
-#screen {
-  border-radius: 48px !important;
-}
-@media (max-width: 480px) {
-  #phone {
-    width: 402px !important;
-    height: 874px !important;
-    border: 7px solid #242426 !important;
-    border-radius: 54px !important;
-    box-shadow: 0 22px 60px rgba(0,0,0,.14), 0 0 0 1px rgba(0,0,0,.06) !important;
-  }
-  #screen { border-radius: 48px !important; }
-}
-</style>
 </body>
 </html>
